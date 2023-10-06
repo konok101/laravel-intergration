@@ -15,5 +15,5 @@ Route::get('myblog', function () {
 Route::get('/about', 'App\Http\Controllers\SiteController@about');
 Route::get('/contact', 'App\Http\Controllers\SiteController@contact');
 
-Route::get('/name/{nameValue}', 'App\Http\Controllers\routhingParameter@myName');
+Route::get('/name/{fastName}/{lastName}', 'App\Http\Controllers\routhingParameter@myName');
 

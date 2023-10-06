@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 class routhingParameter extends Controller
 {
-    function myName($myName){
+    function myName($fastName, $lastName){
 
-        return $myName;
+        return view('myName', ['firstkey'=>$fastName, 'lastkey'=>$lastName]);
 
     }
 }
